@@ -1,0 +1,28 @@
+.newspaper{
+    background: #6c6c6c;
+    &__container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 1rem;
+        text-align: center;
+        max-width: 1440px;
+        margin: auto;
+    }
+    &__content{
+        padding: 1rem;
+        a{
+            text-decoration: none;
+        }
+    }
+    &__img{
+        height: 60px;
+        width: 9em;
+        object-fit: contain;
+        image-rendering:-webkit-optimize-contrast ;
+    }
+    &__description{
+        color: #fff;
+        font-size: .8333333333rem;
+        text-align: center;
+    }
+}

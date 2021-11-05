@@ -1,0 +1,53 @@
+.footer{
+    background-color: #ec8c6c;
+    &__container{
+        max-width: 1440px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        color: #fff;
+        padding: 0.9rem 0.9rem 0.9rem 2rem;
+        color: #fff;
+    }
+    &__info{
+        line-height: 2.5rem;
+    }
+    &__heading{
+        color: #fff;
+        font-size: .8333333333rem;
+        text-transform: none;
+        font-family: Montserrat,"Sans-Serif";
+        font-weight: 700;
+    }
+    &__link{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-size: .8333333333rem;
+    }
+    &__icon{
+        vertical-align: middle;
+    }
+    &__schedule{
+        display: inline;
+        padding-right: 0;
+    }
+    &__socials{
+        text-align: center;
+    }
+    &__media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+    &__social-icons{
+        padding: 0 0.6rem;
+        height: 1.5rem;
+        cursor: pointer;
+    }
+    &__terms{
+        font-size: .8333333333rem;
+        padding: 1rem 0;
+    }
+}
