@@ -37,10 +37,11 @@
 }
 
 .main {
-  height: 83vh;
   background-image: url(https://dogfydiet.com/images/intro_mobile_2.jpg);
   background-size: cover;
-  background-position: 40% -10em;
+  background-position: 40% -2em;
+  background-repeat: no-repeat;
+  height: calc(100vh - 8.5rem);
 }
 
 .main__container {
@@ -106,6 +107,7 @@
   background-size: cover;
   margin-top: 10px;
   height: 70vh;
+  width: 100%;
 }
 
 .food-info__title {
@@ -260,6 +262,85 @@
   font-family: Montserrat,"Sans-Serif";
 }
 
+.menu {
+  height: 100%;
+  position: relative;
+}
+
+.menu__title {
+  text-align: center;
+  padding: 3rem 0 1rem;
+  margin: auto;
+  line-height: 2.5rem;
+  font-size: 2.0736rem;
+}
+
+.menu__paragraph {
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.menu__grid {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  padding: 1rem 9rem 2rem;
+}
+
+.menu__griditem {
+  text-align: center;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 2px 4px 2px #8a8989;
+          box-shadow: 0 2px 4px 2px #8a8989;
+}
+
+.menu__link {
+  text-decoration: none;
+}
+
+.menu__img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 100%;
+  height: 50%;
+}
+
+.menu__ingredient {
+  text-transform: none;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1.44rem;
+  position: relative;
+  font-family: Montserrat,"Sans-Serif";
+}
+
+.menu__description {
+  text-align: left;
+  margin-left: 1rem;
+  width: 10em;
+}
+
+.menu__icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 0.5rem 0.5rem 1rem;
+  place-items: center;
+  place-content: center;
+}
+
+.menu__icon {
+  height: 2.2rem;
+}
+
 .footer {
   background-color: #ec8c6c;
 }
@@ -377,7 +458,7 @@
 .button {
   border-radius: 6px;
   min-width: 3rem;
-  height: 2rem;
+  height: 2.5rem;
   border: none;
   padding: 0.3rem 1rem;
   color: white;
